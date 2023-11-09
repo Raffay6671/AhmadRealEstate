@@ -1,0 +1,38 @@
+.container{
+        /* position: relative; */
+        /* display: inline-block; */
+        margin: 0;
+        min-width: 100%;
+        padding: 0;
+      
+}
+
+.image {
+        width: 100%;
+        min-height: 50%;
+        object-fit: cover;
+      }
+.overlay {
+         position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        text-align: center; 
+      
+
+     
+
+        font-family: 'Arbutus Slab';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 70px;
+        line-height: 88px;
+
+        color: #CCCCCC; 
+
+        mix-blend-mode: lighten;
+        border: 10px solid #000000;
+        /* backdrop-filter: blur(2px); */
+
+      } 

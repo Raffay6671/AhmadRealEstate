@@ -1,0 +1,39 @@
+.footer{
+        background-color: black;
+        position: relative;
+        min-height: 400px;
+}
+.text-area{
+        background-color: gray;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: flex;
+        transform: translate(-50%, -50%);
+        flex-direction: row;
+        gap: 600px;
+}
+
+.logo p{
+        display: inline;
+        font-family: 'Kadwa';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 60px;
+        text-align: right;
+}
+.name{
+
+        color: #264FE3;
+
+}
+
+.com{
+        color: #000000;
+}
+.quinta{
+        width: 127px;
+        height: 86px;
+        border: none;
+}
