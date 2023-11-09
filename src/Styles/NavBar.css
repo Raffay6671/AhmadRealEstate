@@ -1,0 +1,48 @@
+
+
+.navbar{
+
+        background-color: #F5F5F5;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+}
+
+.logo p{
+        display: inline;
+        font-family: 'Kadwa';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 60px;
+        text-align: right;
+}
+.name{
+
+        color: #264FE3;
+
+}
+
+.com{
+        color: #000000;
+}
+
+
+
+.navbar-collapse.collapse a {
+        color: #000000;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 21px;
+}
+
+
+
+.navbar-collapse.collapse a:hover{
+        color: #264FE3 ;
+}
+
