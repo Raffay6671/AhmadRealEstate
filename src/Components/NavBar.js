@@ -14,7 +14,7 @@ export default class NavBar extends Component {
                                 <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
                                 <a class="nav-item nav-link" href="#">For Sale</a>
                                 <a class="nav-item nav-link" href="#">For Rent</a>
-                                <a class="nav-item nav-link" href="#">Our Products</a>
+                                <a class="nav-item nav-link" href="#">Our Projects</a>
                                 <a class="nav-item nav-link" href="#">About Us</a>
                                 <a class="nav-item nav-link" href="#">Contact us</a>
                                 

@@ -90,15 +90,15 @@ export default class Footer extends Component {
                                 Follow us
                         </p>
                         <div className="social">
-                                <a>
+                                <a href='#'>
                                         <img href='#' className='icon' src={insta}/>
 
                                 </a>
-                                <a>
+                                <a  href='#'>
                                         <img href='#' className='icon' src={facebook}/>
 
                                 </a>
-                                <a>
+                                <a  href='#'>
                                         <img href='#' className='icon' src={linkedin}/>
 
                                 </a>
