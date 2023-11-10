@@ -19,11 +19,16 @@
         font-size: 30px;
         line-height: 60px;
         text-align: right;
+        
 }
 .name{
 
         color: #264FE3;
+        
 
+}
+.logo:hover{
+        text-decoration: none;
 }
 
 .com{
@@ -35,8 +40,8 @@
 .navbar-collapse.collapse a {
         color: #000000;
         font-family: 'Inter';
-        font-style: normal;
-        font-weight: 700;
+        font-style: normal ;
+        font-weight: 100;
         font-size: 17px;
         line-height: 21px;
 }
@@ -45,5 +50,6 @@
 
 .navbar-collapse.collapse a:hover{
         color: #264FE3 ;
+         text-decoration: none;
 }
 

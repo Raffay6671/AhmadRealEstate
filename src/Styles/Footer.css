@@ -2,16 +2,22 @@
         background-color: black;
         position: relative;
         min-height: 400px;
+        min-width: 100%;
 }
 .text-area{
-        background-color: gray;
+        background-color: black;
         position: absolute;
         left: 50%;
-        top: 50%;
+        top: 20%;
         display: flex;
         transform: translate(-50%, -50%);
         flex-direction: row;
-        gap: 600px;
+        min-width: 100%;
+        justify-content: space-between;
+        padding-left: 7%;
+        padding-right: 7%;
+        align-items: center;
+
 }
 
 .logo p{
@@ -24,16 +30,100 @@
         text-align: right;
 }
 .name{
-
         color: #264FE3;
-
 }
 
-.com{
-        color: #000000;
+.comm{
+        color: white;
+}
+
+.quinta-block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+.quinta-block:hover{
+        text-decoration: none;
+}
+.developed{
+
+
+        font-family: 'League Gothic';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 34px;
+
+        color: #FFFFFF;
+
+
 }
 .quinta{
         width: 127px;
         height: 86px;
+        padding: 10% 10% ;
         border: none;
+        margin-top: -20%;
 }
+
+
+.link{
+        background-color: black;
+        margin-top: 2%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        display: flex;
+        transform: translate(-50%, -50%);
+        flex-direction: row;
+        min-width: 100%;
+        justify-content: space-evenly;
+}
+.company{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap:5%;
+}
+
+.social{
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        gap:15%;
+}
+
+.heading{
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: 20px;
+        color: #FFFFFF;
+
+
+}
+
+.heading:hover{
+        text-decoration: none;
+}
+
+.sub-heading{
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: 12px;
+        color: #AEA6A6;
+
+}
+
+.sub-heading:hover{
+        text-decoration: none;
+}
+.icon{
+        width: 40;
+        height: 40px;
+}
+
+.ser-cov{
+        display: flex;
+        flex-direction: column;
+}
+
