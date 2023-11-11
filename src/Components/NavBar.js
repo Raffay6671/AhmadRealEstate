@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import "../Styles/NavBar.css"
 
-export default class NavBar extends Component {
-  render() {
-    return (
-        <nav class="navbar navbar-expand-lg ">
+
+
+export default function NavBar() {
+  return (
+    <div>
+       <nav class="navbar navbar-expand-lg ">
                 <a href="#" className="logo">
                         <p className='name'>ahmadrealestate</p>
                         <p className='com'>.com</p>
@@ -22,5 +24,6 @@ export default class NavBar extends Component {
                 </div>
         </nav>
     )
-  }
+    </div>
+  )
 }

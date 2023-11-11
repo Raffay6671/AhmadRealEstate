@@ -1,0 +1,18 @@
+.propertyListContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 19%;
+        padding-right: 19%;
+}
+.propertyListHeading{
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: 20px;
+        line-height: 48px;
+        color: #264FE3;
+        text-align: left;
+        padding-left: 19%;
+        padding-right: 19%;
+        display: block;
+}

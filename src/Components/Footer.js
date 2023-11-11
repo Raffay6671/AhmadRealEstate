@@ -6,10 +6,11 @@ import facebook from "../Images/facebook-icon.png"
 import linkedin from "../Images/linkedin-icon.png"
 
 
-export default class Footer extends Component {
-  render() {
-    return (
-      <div className='footer'>
+
+export default function Footer() {
+  return (
+    <div>
+         <div className='footer'>
         <div className="text-area">
                 <a href="#" className="logo">
                         <p className='name'>ahmadrealestate</p>
@@ -110,6 +111,6 @@ export default class Footer extends Component {
         </div>
 
       </div>
-    )
-  }
+    </div>
+  )
 }

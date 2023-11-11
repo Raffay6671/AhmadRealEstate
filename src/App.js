@@ -1,19 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import NavBar from './Components/NavBar';
-import Banner from './Components/Banner';
-import Footer from './Components/Footer';
-import Admin from './Components/Admin/Admin';
-import AdminLogin from './Components/Admin/AdminLogin';
-
+import HomePage from './Components/HomePage';
+import Property from './Components/Property';
+import PropertyHorizontalList from './Components/PropertyHorizontalList';
 
 function App() {
   return (
     <div className="App">
-      {/* <NavBar/>
-      <Banner/>
-      <Footer/> */}
-      <Admin/>
+     {/* <HomePage/> */}
+     
+     <PropertyHorizontalList/>
 
     </div>
   );

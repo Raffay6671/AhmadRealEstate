@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 
-export default class Admin extends Component {
-  render() {
-    return (
-      <div>
+
+export default function Admin() {
+  return (
+    <div>
+        <div>
       <h1>Admin Dashboard</h1>
 
       <h2>Add New House</h2>
-      <form onSubmit={handleAddHouse}>
-        <input type="text" name="image" placeholder="Image URL" required />
+      <form>
+      <input type="file" name="image" accept="image/*" required />
         <input type="text" name="size" placeholder="Size" required />
         <input type="text" name="location" placeholder="Location" required />
         <input type="number" name="bedrooms" placeholder="Bedrooms" required />
@@ -18,7 +19,7 @@ export default class Admin extends Component {
 
       {/* Houses for Sale */}
       <h2>Houses for Sale</h2>
-      {houses.map((house, index) => (
+      {/* {houses.map((house, index) => (
         <div className="house" key={index}>
           <img src= "hehe" alt={`House ${index + 1}`} />
           <p>Size: "heh"</p>
@@ -28,13 +29,13 @@ export default class Admin extends Component {
           <button>Edit</button>
           <button>Delete</button>
         </div>
-      ))}
+      ))} */}
 
       {/* Houses for Rent */}
       <h2>Houses for Rent</h2>
       {/* Render houses for rent similarly */}
 
     </div>
-    )
-  }
+    </div>
+  )
 }

@@ -1,0 +1,41 @@
+.propertyIconValueContainer{
+        display: flex;
+        flex-direction: row;
+        align-items:flex-start;
+        gap: 5px;
+}
+.propertyIcon{
+        width: 16px;
+        height: 16px;
+}
+.propertyIconValue{
+        margin-top: -1px;
+        font-size: 13px;
+}
+
+.propertyIconValueList{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+}
+
+.card-bodyy{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 10%;
+}
+
+.propertyAddress{
+        color: #5A5A5A;
+        font-size: 14px;
+}
+.propertyDate{
+        color: #5A5A5A;
+        font-size: 12px;
+}
+
+.card-img-top{
+        border: none;
+}

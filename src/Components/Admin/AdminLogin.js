@@ -2,10 +2,12 @@ import React, { Component } from 'react'
 import "D:/Property Project/FrontEnd/ahmadrealestate/src/Styles/AdminLogin.css"
 
 
-export default class AdminLogin extends Component {
-  render() {
-    return (
-      <div>
+
+
+export default function AdminLogin() {
+  return (
+    <div>
+        <div>
       <form className='form'>
       <div class="form-group" >
     <label for="exampleInputEmail1">Email address</label>
@@ -19,6 +21,6 @@ export default class AdminLogin extends Component {
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
       </div>
-    )
-  }
+    </div>
+  )
 }
