@@ -1,0 +1,274 @@
+[
+
+    {
+      "elementNumber": 1,
+      "imageUrl": "https://cf2.bstatic.com/xdata/images/hotel/max1280x900/282504684.jpg?k=f84b39b91f4a1890e180a511d68efeeea307c3c00feb98c3d719f80860ec4291&o=&hp=1",
+      "numBed": 2,
+      "numToilet": 2,
+      "size": "5 Marla",
+      "price": "55000",
+      "address": "G/11-2, Islamabad",
+      "uploadDate": "08/10/2023 10:00 AM"
+    },
+    {
+      "elementNumber": 2,
+      "imageUrl": "https://pfst.cf2.poecdn.net/processed/71eb59fa4809a9ca0a3c78b5725e8a596b565eb1f69f1631d3059e10f90b672d",
+      "numBed": 3,
+      "numToilet": 3,
+      "size": "8 Marla",
+      "price": "80000",
+      "address": "F/8-4, Islamabad",
+      "uploadDate": "08/11/2023 11:30 AM"
+    },
+    {
+      "elementNumber": 3,
+      "imageUrl": "https://cf3.bstatic.com/xdata/images/hotel/max1280x900/282504684.jpg?k=f84b39b91f4a1890e180a511d68efeeea307c3c00feb98c3d719f80860ec4291&o=&hp=1",
+      "numBed": 4,
+      "numToilet": 4,
+      "size": "10 Marla",
+      "price": "120000",
+      "address": "E/11-3, Islamabad",
+      "uploadDate": "08/12/2023 09:45 AM"
+    },
+    {
+      "elementNumber": 4,
+      "imageUrl": "https://dummyimage.com/600x400/000/fff",
+      "numBed": 2,
+      "numToilet": 1,
+      "size": "3 Marla",
+      "price": "35000",
+      "address": "A/7-1, Rawalpindi",
+      "uploadDate": "08/13/2023 02:15 PM"
+    },
+    {
+      "elementNumber": 5,
+      "imageUrl": "https://dummyimage.com/600x400/000/fff",
+      "numBed": 3,
+      "numToilet": 2,
+      "size": "7 Marla",
+      "price": "60000",
+      "address": "B/10-2, Islamabad",
+      "uploadDate": "08/14/2023 09:30 AM"
+    },
+    {
+      "elementNumber": 6,
+      "imageUrl": "https://dummyimage.com/600x400/000/fff",
+      "numBed": 4,
+      "numToilet": 3,
+      "size": "12 Marla",
+      "price": "110000",
+      "address": "H/5-3, Rawalpindi",
+      "uploadDate": "08/15/2023 04:45 PM"
+    },
+    {
+      "elementNumber": 7,
+      "imageUrl": "https://dummyimage.com/600x400/000/fff",
+      "numBed": 2,
+      "numToilet": 1,
+      "size": "5 Marla",
+      "price": "40000",
+      "address": "D/6-1, Islamabad",
+      "uploadDate": "08/16/2023 11:20 AM"
+    },
+    {
+      "elementNumber": 8,
+      "imageUrl": "https://dummyimage.com/600x400/000/fff",
+      "numBed": 3,
+      "numToilet": 2,
+      "size": "8 Marla",
+      "price": "75000",
+      "address": "G/9-4, Rawalpindi",
+      "uploadDate": "08/17/2023 03:55 PM"
+    },
+    {
+        "elementNumber": 9,
+        "imageUrl": "https://dummyimage.com/600x400/000/fff",
+        "numBed": 4,
+        "numToilet": 3,
+        "size": "10 Marla",
+        "price": "95000",
+        "address": "A/5-2, Islamabad",
+        "uploadDate": "08/18/2023 09:30 AM"
+      },
+      {
+        "elementNumber": 10,
+        "imageUrl": "https://dummyimage.com/600x400/000/fff",
+        "numBed": 2,
+        "numToilet": 1,
+        "size": "5 Marla",
+        "price": "40000",
+        "address": "C/8-1, Rawalpindi",
+        "uploadDate": "08/19/2023 01:45 PM"
+      },
+      {
+        "elementNumber": 11,
+        "imageUrl": "https://dummyimage.com/600x400/000/fff",
+        "numBed": 3,
+        "numToilet": 2,
+        "size": "7 Marla",
+        "price": "65000",
+        "address": "E/7-3, Islamabad",
+        "uploadDate": "08/20/2023 06:00 PM"
+      },
+      {
+        "elementNumber": 12,
+        "imageUrl": "https://dummyimage.com/600x400/000/fff",
+        "numBed": 4,
+        "numToilet": 3,
+        "size": "12 Marla",
+        "price": "110000",
+        "address": "D/6-2, Rawalpindi",
+        "uploadDate": "08/21/2023 10:15 AM"
+      },
+      {
+        "elementNumber": 13,
+        "imageUrl": "https://dummyimage.com/600x400/000/fff",
+        "numBed": 2,
+        "numToilet": 1,
+        "size": "5 Marla",
+        "price": "45000",
+        "address": "B/3-1, Islamabad",
+        "uploadDate": "08/22/2023 02:30 PM"
+      },
+      {
+        "elementNumber": 14,
+        "imageUrl": "https://dummyimage.com/600x400/000/fff",
+        "numBed": 3,
+        "numToilet": 2,
+        "size": "8 Marla",
+        "price": "80000",
+        "address": "G/5-4, Rawalpindi",
+        "uploadDate": "08/23/2023 06:45 PM"
+      },
+      {
+        "elementNumber": 15,
+        "imageUrl": "https://dummyimage.com/600x400/000/fff",
+        "numBed": 4,
+        "numToilet": 3,
+        "size": "10 Marla",
+        "price": "125000",
+        "address": "F/10-3, Islamabad",
+        "uploadDate": "08/24/2023 11:00 AM"
+      },
+      {
+        "elementNumber": 16,
+        "imageUrl": "https://dummyimage.com/600x400/000/fff",
+        "numBed": 2,
+        "numToilet": 1,
+        "size": "5 Marla",
+        "price": "50000",
+        "address": "E/6-1, Rawalpindi",
+        "uploadDate": "08/25/2023 03:15 PM"
+      },
+      {
+        "elementNumber": 17,
+        "imageUrl": "https://dummyimage.com/600x400/000/fff",
+        "numBed": 3,
+        "numToilet": 2,
+        "size": "8 Marla",
+        "price": "85000",
+        "address": "H/2-4, Islamabad",
+        "uploadDate": "08/26/2023 07:30 PM"
+      },
+      {
+        "elementNumber": 18,
+        "imageUrl": "https://dummyimage.com/600x400/000/fff",
+        "numBed": 4,
+        "numToilet": 3,
+        "size": "10 Marla",
+        "price": "130000",
+        "address": "C/9-3, Rawalpindi",
+        "uploadDate": "08/27/2023 11:45 AM"
+      }
+      ,
+      {
+        "elementNumber": 19,
+        "imageUrl": "https://dummyimage.com/600x400/000/fff",
+        "numBed": 2,
+        "numToilet": 1,
+        "size": "5 Marla",
+        "price": "55000",
+        "address": "D/5-2, Islamabad",
+        "uploadDate": "08/28/2023 04:00 PM"
+      },
+      {
+        "elementNumber": 20,
+        "imageUrl": "https://dummyimage.com/600x400/000/fff",
+        "numBed": 3,
+        "numToilet": 2,
+        "size": "8 Marla",
+        "price": "90000",
+        "address": "F/4-4, Rawalpindi",
+        "uploadDate": "08/29/2023 08:15 AM"
+      },
+      {
+        "elementNumber": 21,
+        "imageUrl": "https://dummyimage.com/600x400/000/fff",
+        "numBed": 4,
+        "numToilet": 3,
+        "size": "10 Marla",
+        "price": "135000",
+        "address": "G/11-3, Islamabad",
+        "uploadDate": "08/30/2023 12:30 PM"
+      },
+      {
+        "elementNumber": 22,
+        "imageUrl": "https://dummyimage.com/600x400/000/fff",
+        "numBed": 2,
+        "numToilet": 1,
+        "size": "5 Marla",
+        "price": "60000",
+        "address": "H/9-1, Rawalpindi",
+        "uploadDate": "08/31/2023 04:45 PM"
+      },
+      {
+        "elementNumber": 23,
+        "imageUrl": "https://dummyimage.com/600x400/000/fff",
+        "numBed": 3,
+        "numToilet": 2,
+        "size": "8 Marla",
+        "price": "95000",
+        "address": "C/7-4, Islamabad",
+        "uploadDate": "09/01/2023 09:00 AM"
+      },
+      {
+        "elementNumber": 24,
+        "imageUrl": "https://dummyimage.com/600x400/000/fff",
+        "numBed": 4,
+        "numToilet": 3,
+        "size": "10 Marla",
+        "price": "140000",
+        "address": "E/5-2, Rawalpindi",
+        "uploadDate": "09/02/2023 01:15 PM"
+      },
+      {
+        "elementNumber": 25,
+        "imageUrl": "https://dummyimage.com/600x400/000/fff",
+        "numBed": 2,
+        "numToilet": 1,
+        "size": "5 Marla",
+        "price": "65000",
+        "address": "B/9-1, Islamabad",
+        "uploadDate": "09/03/2023 05:30 PM"
+      },
+      {
+        "elementNumber": 26,
+        "imageUrl": "https://dummyimage.com/600x400/000/fff",
+        "numBed": 3,
+        "numToilet": 2,
+        "size": "8 Marla",
+        "price": "100000",
+        "address": "D/8-4, Rawalpindi",
+        "uploadDate": "09/04/2023 09:45 AM"
+      },
+      {
+        "elementNumber": 27,
+        "imageUrl": "https://dummyimage.com/600x400/000/fff",
+        "numBed": 4,
+        "numToilet": 3,
+        "size": "10 Marla",
+        "price": "145000",
+        "address": "F/6-3, Islamabad",
+        "uploadDate": "09/05/2023 02:00 PM"
+      }
+    ]
