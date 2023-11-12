@@ -7,9 +7,9 @@ import PropertyHorizontalList from './Components/PropertyHorizontalList';
 function App() {
   return (
     <div className="App">
-     {/* <HomePage/> */}
+     <HomePage/>
      
-     <PropertyHorizontalList/>
+     
 
     </div>
   );

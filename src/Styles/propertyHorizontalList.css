@@ -1,9 +1,10 @@
 .propertyListContainer{
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
-        padding-left: 15%;
-        padding-right: 15%;
+        margin-left: 20px;
+        margin-right: 20px;
 }
 .propertyListHeading{
         font-family: 'Inter';
@@ -12,7 +13,34 @@
         line-height: 48px;
         color: #264FE3;
         text-align: left;
-        padding-left: 15%;
+        padding-left: 15%; 
         padding-right: 19%;
         display: block;
+        justify-content: start;
+}
+
+.propertyListArrowButton{
+        max-width: 80px;
+        max-height: 80px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+}
+
+
+
+.propertyListArrowButton.active {
+        max-width: 80px;
+        max-height: 80px;
+        background-color: transparent;
+        border: 0px solid black;
+        outline: none;
+
+}
+
+
+.listWithArrows{
+        display: flex;
+        justify-content: center;
+        align-items: center;
 }

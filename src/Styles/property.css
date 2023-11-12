@@ -4,6 +4,11 @@
         align-items:flex-start;
         gap: 5px;
 }
+.propertyImage{
+        height: 150px;
+        width: 250px;
+        object-fit: cover;
+}
 .propertyIcon{
         width: 16px;
         height: 16px;
@@ -38,4 +43,9 @@
 
 .card-img-top{
         border: none;
+}
+
+.cardd{
+        margin-left: 20px;
+        margin-right: 20px;
 }

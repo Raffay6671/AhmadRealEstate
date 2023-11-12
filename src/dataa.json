@@ -1,5 +1,4 @@
 [
-
     {
       "elementNumber": 1,
       "imageUrl": "https://cf2.bstatic.com/xdata/images/hotel/max1280x900/282504684.jpg?k=f84b39b91f4a1890e180a511d68efeeea307c3c00feb98c3d719f80860ec4291&o=&hp=1",
@@ -12,7 +11,7 @@
     },
     {
       "elementNumber": 2,
-      "imageUrl": "https://pfst.cf2.poecdn.net/processed/71eb59fa4809a9ca0a3c78b5725e8a596b565eb1f69f1631d3059e10f90b672d",
+      "imageUrl": "https://dummyimage.com/600x400/000/fff",
       "numBed": 3,
       "numToilet": 3,
       "size": "8 Marla",
@@ -22,7 +21,7 @@
     },
     {
       "elementNumber": 3,
-      "imageUrl": "https://cf3.bstatic.com/xdata/images/hotel/max1280x900/282504684.jpg?k=f84b39b91f4a1890e180a511d68efeeea307c3c00feb98c3d719f80860ec4291&o=&hp=1",
+      "imageUrl": "https://dummyimage.com/600x400/000/fff",
       "numBed": 4,
       "numToilet": 4,
       "size": "10 Marla",
@@ -271,4 +270,4 @@
         "address": "F/6-3, Islamabad",
         "uploadDate": "09/05/2023 02:00 PM"
       }
-    ]
+]

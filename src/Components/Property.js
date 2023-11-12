@@ -34,10 +34,10 @@ export default function Property(props) {
   return (
     <div>
         <div className="cardd" style={{ width: '14rem' }}>
-        <img className="card-img-top" src={props.imageUrl} alt="Card image cap" />
+        <img className='propertyImage' src={props.imageUrl} alt="Card image cap" />
                 <div className="card-bodyy">
                         <div className="propertyIconValueList">
-
+    
                                 <div className="propertyIconValueContainer      ">
                                         <img src={bed} className='propertyIcon'/>
                                         <p className='prpoertyIconValue'> {props.numBed}</p>
