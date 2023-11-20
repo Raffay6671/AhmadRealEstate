@@ -18,7 +18,9 @@ export default function PropertyHorizontalList(props) {
         await setData(jsonData);
       } catch (error) {
         console.error('Errorr fetching JSON:', error);
+
       }
+      setIsClicked(false)
     };
 
     fetchData();
@@ -48,17 +50,17 @@ export default function PropertyHorizontalList(props) {
 
   return (
         <div>   
-                <p className="propertyListHeading">Properties for {props.type}</p>
+                <p className="propertyHorizontalListHeading">Properties for {props.type}</p>
 
 
 
 
                 <div className="listWithArrows">
 
-                <button   className={`propertyListArrowButton ${isClicked ? 'active' : ''}`} onClick={() => handleLeftClick()}>
+                <button   className={`propertyHorizontalListArrowButton ${isClicked ? 'active' : ''}`} onClick={() => handleLeftClick()}>
                     <img src={leftArrow} alt="Left Arrow" />
                   </button>
-                  <div className='propertyListContainer'>
+                  <div className='propertyHorizontalListContainer'>
                     {data ? data.map((property) => (
                       property.elementNumber <= displayedProperties && property.elementNumber > displayedProperties - 4 ? (
                         <Property
@@ -77,10 +79,13 @@ export default function PropertyHorizontalList(props) {
                     )) : <div>Properties not rendered</div>}
                   </div>
 
-                  <button  className={`propertyListArrowButton ${isClicked ? 'active' : ''}`} onClick={() => handleRightClick()}>
+                  <button  className={`propertyHorizontalListArrowButton ${isClicked ? 'active' : ''}`} onClick={() => handleRightClick()}>
                     <img src={rightArrow} alt="Right Arrow" />
                   </button>
                 </div>
+
+
+                <a href='#' className='propertyLink'>View all Properties for {props.type}</a>
 
               
               

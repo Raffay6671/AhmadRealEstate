@@ -10,7 +10,7 @@ export default function HomePage() {
     <div>
       <NavBar/>
       <Banner/>
-      <PropertyHorizontalList/>
+      <PropertyHorizontalList type="sale"/>
 
       <PropertyHorizontalList type="rent"/>
       <Testimonials/>

@@ -1,0 +1,24 @@
+
+.container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+         /* position: absolute; */
+         left: 0px;
+         right: 0px;
+}
+
+h1{
+        font-family: 'Rubik';
+        font-size: 40px;
+        font-weight: 400;
+        letter-spacing: 0em;
+        text-align: center;
+       
+        color: #EC5863;
+        
+        
+}

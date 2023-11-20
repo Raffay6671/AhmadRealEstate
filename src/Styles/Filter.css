@@ -1,0 +1,107 @@
+
+
+.filter-container{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 70px;
+       top: 30%;
+       /* bottom: -1.8rem; */
+       left: 0.25rem;
+       right: 0;
+        z-index: 2;
+        gap: 4%;
+         /* background-color: grey; */
+}
+
+.button-container{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 5px;
+        width: 755px;
+        width: 105vh;
+}
+.subject-button{
+        padding: 20% 20%;
+        border: none;
+        font-family: 'Rubik';
+        font-size: 16px;
+        font-size: 2.2vh;
+        font-weight: 500;
+        color: #7395CC;
+        border-radius: 30px;
+        /* height: 56px; */
+        width: 176px;
+        width: 24.3vh;
+        padding: 16px 48px 16px 48px ;
+        min-height: 8vh;
+        padding: 2.2vh 6.68vh 2.2vh 6.68vh ;
+        text-align: center;
+}
+.subject-button:hover{
+        background-color: #9aabe9;
+
+        color: white;
+        transition:  background-color 0.3s;
+        cursor: pointer;
+}
+
+.selected-subject-button, .selected-subject-button:focus{
+        padding: 20% 20%;
+        width: 176px;
+        width: 24.3vh;
+        font-family: 'Rubik';
+        
+        font-size: 2.2vh;
+        font-weight: 500;
+        border-radius: 30px;
+        background-color: #264FE3;
+
+        padding: 16px 48px 16px 48px ;
+        padding: 2.2vh 6.68vh 2.2vh 6.68vh ;
+        text-align: center;
+        color: white;
+        border: none;
+        outline: #264FE3;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+        .filter-container{
+                position: absolute;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-direction: column;
+                /* margin-top: 70px; */
+               top: 30%;
+               /* bottom: -1.8rem; */
+                z-index: 2;
+                gap: 4vh;
+        }
+
+      
+
+        .subject-button{
+            
+                font-size: 1.5vh;
+                min-width: 28%;
+                min-height: 5vh;
+                padding: 0  0 0 0;
+                text-align: center;
+        }
+
+        .selected-subject-button{
+                font-size: 1.5vh;
+                min-width: 28%;
+                min-height: 5vh;
+                padding: 0  0 0 0;
+                text-align: center;
+        }
+
+       
+}

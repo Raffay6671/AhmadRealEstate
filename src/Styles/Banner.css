@@ -1,8 +1,10 @@
-.container{
-        /* position: relative; */
+
+
+.bannerContainer{
+        position: relative;
         /* display: inline-block; */
-        margin: 0;
         min-width: 100%;
+        margin-top: 0;
         padding: 0;
       
 }
@@ -12,6 +14,10 @@
         min-height: 50%;
         object-fit: cover;
       }
+
+
+
+
 .overlay {
          position: absolute;
         top: 30%;
@@ -19,10 +25,6 @@
         transform: translate(-50%, -50%);
         
         text-align: center; 
-      
-
-     
-
         font-family: 'Arbutus Slab';
         font-style: normal;
         font-weight: 400;
@@ -33,6 +35,5 @@
 
         mix-blend-mode: lighten;
         border: 10px solid #000000;
-        /* backdrop-filter: blur(2px); */
 
       } 

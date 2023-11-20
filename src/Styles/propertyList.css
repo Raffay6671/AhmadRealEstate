@@ -1,5 +1,5 @@
 
-.propertyHorizontalListHeading{
+.propertyListHeading{
         margin-top: 5%;
         font-family: 'Inter';
         font-style: normal;
@@ -13,27 +13,20 @@
         justify-content: start;
 }
 
-.propertyHorizontalListContainer{
+.propertyListContainer{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
-        margin-left: 20px;
-        margin-right: 20px;
-}
-
-.propertyHorizontalListArrowButton{
-        max-width: 80px;
-        max-height: 80px;
-        background-color: transparent;
-        border: none;
-        
-        outline: none;
+        margin-left: 15%;
+        margin-right: 15%;
 }
 
 
 
-.propertyHorizontalListArrowButton.active {
+
+
+.propertyListArrowButton.active {
         max-width: 80px;
         max-height: 80px;
         background-color: transparent;
@@ -43,12 +36,7 @@
 }
 
 
-.listWithArrows{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 2%;
-}
+
 .propertyLink{
         color: #37474F;
 }
