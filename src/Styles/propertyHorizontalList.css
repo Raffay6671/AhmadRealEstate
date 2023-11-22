@@ -25,11 +25,23 @@
 @media (max-width: 600px) {
 
         .propertyHorizontalListContainer{
-                margin-left: 0px;
-                margin-right: 20px; 
+                margin-left: -8px;
+                margin-right: 15px; 
         }
         .propertyHorizontalListHeading{
                 padding-right: 0%;
+                font-size: 15px;
+        }
+        .propertyHorizontalListArrowButton{
+                /* width: 2px;
+                height: 2px; */
+        }
+        .propertyHorizontalListArrowImage{
+                width: 20px;
+                height: 50px;
+        }
+        .propertyLink{
+               font-size: 15px;
         }
 }
 

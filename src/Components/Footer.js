@@ -4,6 +4,7 @@ import quinta from "../Images/QuintaCodeBlack.png"
 import insta from "../Images/insta-icon.png"
 import facebook from "../Images/facebook-icon.png"
 import linkedin from "../Images/linkedin-icon.png"
+import { Link } from 'react-router-dom';
 
 
 
@@ -12,10 +13,10 @@ export default function Footer() {
     <div>
          <div className='footer'>
         <div className="text-area">
-                <a href="#" className="footerLogo">
+                <Link to="/" className="footerLogo">
                         <p className='footerName'>ahmadrealestate</p>
                         <p className='footerComm'>.com</p>
-                </a>
+                </Link>
                 <a  target="_blank" href='https://www.linkedin.com/company/100022422/' className="quinta-block">
                         <p className="developed">
                                 Developed by
@@ -27,48 +28,48 @@ export default function Footer() {
 
         <div className="footerLink">
                 <div className="company">
-                        <a href='#' className='heading'>
+                        <p className='heading'>
                                 Company
-                        </a>
-                        <a href='#' className='sub-heading'>
+                        </p>
+                        <Link to='/' className='sub-heading'>
                                 Contact us
-                        </a>
-                        <a href='#' className='sub-heading'>
+                        </Link>
+                        <Link to='/' className='sub-heading'>
                                 About us
-                        </a>
-                        <a href='#' className='sub-heading'>
+                        </Link>
+                        <Link to='/' className='sub-heading'>
                                 Our Projects
-                        </a>
+                        </Link>
                     
                        
 
                 </div>
                 <div className="ser-cov">
                         <div className="company">
-                        <a href='#' className='heading'>
+                        <p  className='heading'>
                                 Services
-                        </a>
-                        <a href='#' className='sub-heading'>
+                        </p>
+                        <Link to='/PropertyList' className='sub-heading'>
                                 Properties for Sale
-                        </a>
-                        <a href='#' className='sub-heading'>
+                        </Link>
+                        <Link to='/PropertyList' className='sub-heading'>
                                 Properties for Rent
-                        </a>
+                        </Link>
 
                         </div>
                         <div className="company">
-                        <a href='#' className='heading'>
+                        <p className='heading'>
                                 Coverage
-                        </a>
-                        <a href='#' className='sub-heading'>
+                        </p>
+                        <Link to='/PropertyList' className='sub-heading'>
                                 Islamabad
-                        </a>
-                        <a href='#' className='sub-heading'>
+                        </Link>
+                        <Link to='/PropertyList' className='sub-heading'>
                                 Rawalpindi
-                        </a>
-                        <a href='#' className='sub-heading'>
+                        </Link>
+                        <Link to='/PropertyList' className='sub-heading'>
                                 Murree
-                        </a>
+                        </Link>
                         </div>
                 </div>
                 <div className="company">
@@ -91,18 +92,18 @@ export default function Footer() {
                                 Follow us
                         </p>
                         <div className="social">
-                                <a href='#'>
+                                <Link to='/'>
                                         <img href='#' className='icon' src={insta}/>
 
-                                </a>
-                                <a  href='#'>
+                                </Link>
+                                <Link href='/'>
                                         <img href='#' className='icon' src={facebook}/>
 
-                                </a>
-                                <a  href='#'>
+                                </Link>
+                                <Link href='/'>
                                         <img href='#' className='icon' src={linkedin}/>
 
-                                </a>
+                                </Link>
                                 
                         </div>
                         
