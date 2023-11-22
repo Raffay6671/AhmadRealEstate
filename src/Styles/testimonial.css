@@ -1,14 +1,17 @@
-.container-test{
+.container-test {
         position: relative;
         margin-top: 5%;
-}
-.test-image{
+      }
+      
+      .test-image {
         position: relative;
         width: 100%;
-        height: 660px;
-        object-fit: fill;
-}
-.text-test{
+        height: auto; /* Change to auto to maintain aspect ratio */
+        max-height: 660px; /* Add a max-height for smaller screens */
+        object-fit: cover; /* Change to cover to maintain aspect ratio and cover the container */
+      }
+      
+      .text-test {
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -17,26 +20,23 @@
         top: 10%;
         align-items: center;
         padding: 2% 5% 2% 5%;
-}
-.heading2{
-
-
+      }
+      
+      .heading2 {
         font-family: 'Inter';
         font-style: italic;
         font-weight: 300;
         font-size: 34px;
         line-height: 90px;
-
-
         color: #FFFFFF;
-
-
-}
-.comma{
+      }
+      
+      .comma {
         width: 50px;
         height: 50px;
-}
-.quotation{
+      }
+      
+      .quotation {
         margin-top: 5%;
         color: white;
         font-size: 20px;
@@ -44,8 +44,33 @@
         padding-right: 10%;
         padding-left: 10%;
         padding: 5% 10% 5% 10%;
-        /* width: 963px; */
-        /* height: 337px; */
         background-color: black;
         mix-blend-mode: plus-darker;
-}
+      }
+      
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .text-test {
+          left: 5%;
+          right: 5%;
+          padding: 2% 2% 2% 2%;
+        }
+      
+        .heading2 {
+          font-size: 14px;
+          line-height: 10px;
+        }
+
+        .comma {
+                width: 20px;
+                height: 20px;
+              }
+      
+        .quotation {
+                font-size: 10px;
+          line-height: 10px;
+          padding-right: 10%;
+          padding-left: 10%;
+        }
+      }
+      

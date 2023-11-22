@@ -2,13 +2,13 @@
 
 .navbar{
 
-        background-color: #F5F5F5;
-        position: fixed;
+        /* background-color: #F5F5F5; */
+        /* position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 9999;
-        height: 50px;
+        z-index: 9999; */
+        /* height: 50px; */
 }
 
 .logo p{
@@ -17,6 +17,8 @@
         font-style: normal;
         font-weight: 700;
         font-size: 30px;
+        font-size: 3.2vh;
+
         line-height: 60px;
         text-align: right;
         
@@ -38,18 +40,19 @@
 
 
 .navbar-collapse.collapse a {
-        color: #000000;
+        /* color: #000000;
         font-family: 'Inter';
         font-style: normal ;
         font-weight: 100;
         font-size: 12px;
-        line-height: 21px;
+
+        line-height: 21px; */
 }
 
 
 
 .navbar-collapse.collapse a:hover{
-        color: #264FE3 ;
-         text-decoration: none;
+        /* color: #264FE3 ;
+         text-decoration: none; */
 }
 

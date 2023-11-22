@@ -3,16 +3,15 @@ import Banner from './Banner';
 import Footer from './Footer';
 import Testimonials from './Testimonials';
 import Choose from './Choose';
-import NavBar from './NavBar';
 import PropertyHorizontalList from './PropertyHorizontalList';
-export default function HomePage() {
+export default function HomePage(props) {
   return (
     <div>
-      <NavBar/>
+      
       <Banner/>
-      <PropertyHorizontalList type="sale"/>
+      <PropertyHorizontalList type="Sale" setCategory={props.setcategory} />
 
-      <PropertyHorizontalList type="rent"/>
+      <PropertyHorizontalList type="Rent"  setCategory={props.setcategory}/>
       <Testimonials/>
       <Choose/>
       <Footer/>

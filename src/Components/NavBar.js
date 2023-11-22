@@ -1,29 +1,50 @@
-import React, { Component } from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import "../Styles/NavBar.css"
 
-
-
-export default function NavBar() {
+export default function NavBar (props) {
   return (
-    <div>
-       <nav class="navbar navbar-expand-lg ">
-                <a href="#" className="logo">
-                        <p className='name'>ahmadrealestate</p>
-                        <p className='com'>.com</p>
-                </a>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                                <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                                <a class="nav-item nav-link" href="#">For Sale</a>
-                                <a class="nav-item nav-link" href="#">For Rent</a>
-                                <a class="nav-item nav-link" href="#">Our Projects</a>
-                                <a class="nav-item nav-link" href="#">About Us</a>
-                                <a class="nav-item nav-link" href="#">Contact us</a>
-                                
-                        </div>
-                </div>
-        </nav>
-    )
-    </div>
-  )
-}
+    <nav className="navbar navbar-expand-lg navbar-light bg-lignt">
+      <div className="container-fluid">
+      <Link to="/" className="logo">
+          <p className='name'>ahmadrealestate</p>
+          <p className='com'>.com</p>
+        </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul className="navbar-nav">
+                <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+                </li>
+                <li className="nav-item">
+                <Link className="nav-link" to="/PropertyList" onClick={() => props.setCategory("Sale")}>For Sale</Link>
+                </li>
+                <li className="nav-item">
+                <Link className="nav-link" to="/PropertyList" onClick={() => props.setCategory("Rent")}>For Rent</Link>
+                </li>
+                <li className="nav-item">
+                <Link className="nav-link" to="/">Our Projects</Link>
+                </li>
+                <li className="nav-item">
+                <Link className="nav-link" to="/">About Us</Link>
+                </li>
+                <li className="nav-item">
+                <Link className="nav-link" to="/">Contact us</Link>
+                </li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+  );
+};
+

@@ -12,9 +12,9 @@ export default function Footer() {
     <div>
          <div className='footer'>
         <div className="text-area">
-                <a href="#" className="logo">
-                        <p className='name'>ahmadrealestate</p>
-                        <p className='comm'>.com</p>
+                <a href="#" className="footerLogo">
+                        <p className='footerName'>ahmadrealestate</p>
+                        <p className='footerComm'>.com</p>
                 </a>
                 <a  target="_blank" href='https://www.linkedin.com/company/100022422/' className="quinta-block">
                         <p className="developed">
@@ -25,7 +25,7 @@ export default function Footer() {
                
         </div>
 
-        <div className="link">
+        <div className="footerLink">
                 <div className="company">
                         <a href='#' className='heading'>
                                 Company

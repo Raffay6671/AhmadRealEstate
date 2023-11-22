@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Property from './Property'
 import "../Styles/propertyList.css"
 import datajson from "../dataa.json"
-import NavBar from './NavBar';
 import Footer from './Footer';
 import Filter from './Filter';
 import NoResultFound from './NoResultFound';
@@ -45,9 +44,7 @@ export default function PropertyList(props) {
      
 
   useEffect(() => {
-    console.log("hehe")
         const updateFilteredData = async () => {
-                console.log("hehe")
                 await setFilteredData(data.filter(
                         (element) =>
                           (city === 'All' || element.address.split(', ').pop() === city) 
@@ -68,8 +65,6 @@ useEffect(() => {
 
   return (
         <div>   
-
-                <NavBar/>
 
                 <Filter updateCity={setCity}/>
                 <p className="propertyListHeading">Properties for {props.type} in {city === "All"?"All Cities": city}</p>

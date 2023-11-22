@@ -20,7 +20,7 @@
 
 }
 
-.logo p{
+.footerLogo p{
         display: inline;
         font-family: 'Kadwa';
         font-style: normal;
@@ -29,11 +29,11 @@
         line-height: 60px;
         text-align: right;
 }
-.name{
+.footerName{
         color: #264FE3;
 }
 
-.comm{
+.footerComm{
         color: white;
 }
 
@@ -67,7 +67,7 @@
 }
 
 
-.link{
+.footerLink{
         background-color: black;
         margin-top: 5%;
         position: absolute;
@@ -125,5 +125,86 @@
 .ser-cov{
         display: flex;
         flex-direction: column;
+}
+
+
+
+@media (max-width: 768px) {
+
+        .footer{
+                /* display: flex;
+                flex-direction: column; */
+        }
+        .text-area{
+                background-color: black;
+                /* position: absolute; */
+                /* left: 50%; */
+                /* top: 20%; */
+                /* display: flex; */
+                /* transform: translate(-50%, -50%); */
+                /* flex-direction: row; */
+                /* min-width: 100%; */
+                /* justify-content: space-between; */
+                /* padding-left: 7%; */
+                /* padding-right: 7%;
+                align-items: center; */
+        
+        }
+        .footerLogo p{
+                display: inline;
+                font-family: 'Kadwa';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 60px;
+                text-align: right;
+        }
+        .developed{
+
+
+              
+                font-size: 15px;
+        
+        
+        
+        }
+        .quinta{
+                width: 107px;
+                height: 76px;
+        }
+
+        .footerLink{
+                
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                align-items: start;
+                gap:10px;
+                margin-top: 40%;
+                padding-left: 10%;
+                /* transform: translate(-50%, -50%); */
+                /* min-width: 100%; */
+                /* justify-content: space-evenly; */
+        }
+
+        .company{
+                /* display: flex;
+                flex-direction: column;
+                text-align: left;
+                gap:5%; */
+                /* width: 90%; */
+        }
+
+        .social{
+                display: grid;
+                grid-template-columns: repeat(2, 0fr);
+        }
+        .icon{
+                width: 30px;
+                height: 30px;
+        }
+        
+
+        
+
 }
 
