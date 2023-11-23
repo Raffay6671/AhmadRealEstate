@@ -176,11 +176,12 @@
         .footerLink{
                 
                 display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                align-items: start;
+                grid-template-columns: repeat(2, auto);
+                /* justify-content: center; */
+                /* align-items: start; */
                 gap:10px;
-                margin-top: 40%;
-                padding-left: 10%;
+                margin-top: 30%;
+                /* padding-left: 10%; */
                 /* transform: translate(-50%, -50%); */
                 /* min-width: 100%; */
                 /* justify-content: space-evenly; */
@@ -201,6 +202,24 @@
         .icon{
                 width: 30px;
                 height: 30px;
+        }
+
+        .heading{
+                font-family: 'Inter';
+                font-style: normal;
+                font-size: 15px;
+                color: #FFFFFF;
+        
+        
+        }
+        
+        
+        .sub-heading{
+                font-family: 'Inter';
+                font-style: normal;
+                font-size: 9px;
+                color: #AEA6A6;
+        
         }
         
 

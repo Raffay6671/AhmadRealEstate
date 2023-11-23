@@ -77,7 +77,7 @@ export default function PropertyHorizontalList(props) {
                 <div className="listWithArrows">
 
                 <button   className={`propertyHorizontalListArrowButton ${isClicked ? 'active' : ''}`} onClick={() => handleLeftClick()}>
-                    <img src={leftArrow} alt="Left Arrow" />
+                    <img className='propertyHorizontalListArrowImage' src={leftArrow} alt="Left Arrow" />
                   </button>
                   <div className='propertyHorizontalListContainer'>
                     {data ? data.map((property) => (
@@ -99,7 +99,7 @@ export default function PropertyHorizontalList(props) {
                   </div>
 
                   <button  className={`propertyHorizontalListArrowButton ${isClicked ? 'active' : ''}`} onClick={() => handleRightClick()}>
-                    <img src={rightArrow} alt="Right Arrow" />
+                    <img className='propertyHorizontalListArrowImage' src={rightArrow} alt="Right Arrow" />
                   </button>
                 </div>
 

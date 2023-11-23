@@ -44,3 +44,35 @@
         text-decoration: none;
         color: #264FE3;
 }
+.propertyListPagination{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+}
+.propertyListPaginationButton {
+        outline: none;
+        background: transparent;
+        margin: 0;
+        padding: 8px 12px; /* Adjust padding as needed */
+        border: 1px solid #333; /* Add a subtle border */
+        border-radius: 4px; /* Round the corners */
+        cursor: pointer;
+        transition: background-color 0.3s; /* Smooth transition for hover effect */
+      }
+
+.propertyListPaginationButton:hover {
+background-color: #f0f0f0; /* Change background color on hover */
+}
+
+
+@media (max-width: 600px) {
+
+      
+        .propertyListHeading{
+                padding-right: 0%;
+                font-size: 15px;
+                
+        }
+}
+

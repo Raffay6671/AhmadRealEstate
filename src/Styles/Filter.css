@@ -72,16 +72,26 @@
 @media (max-width: 600px) {
 
         .filter-container{
-                position: absolute;
-                display: flex;
+                /* position: absolute; */
+                /* display: flex;
                 justify-content: space-around;
                 align-items: center;
-                flex-direction: column;
+                flex-direction: column; */
                 /* margin-top: 70px; */
-               top: 30%;
+               /* top: 10px; */
                /* bottom: -1.8rem; */
+               margin-top: 30px;
                 z-index: 2;
-                gap: 4vh;
+        }
+
+        .button-container{
+                display: flex;
+                justify-content: center;
+                gap: 4px;
+                padding-left: 20px;
+                padding-right: 20px;
+                width: 100%;
+                height: 5vh;
         }
 
       
@@ -89,18 +99,20 @@
         .subject-button{
             
                 font-size: 1.5vh;
-                min-width: 28%;
+                width: 12vh; 
+                margin: 0 0 0 0;
+                
+                padding: 0 0 0 0;
                 min-height: 5vh;
-                padding: 0  0 0 0;
-                text-align: center;
         }
 
-        .selected-subject-button{
+        .selected-subject-button, .selected-subject-button:focus{
                 font-size: 1.5vh;
-                min-width: 28%;
+                margin: 0 0 0 0;
+                width: 12vh; 
+                /* height: 24px; */
                 min-height: 5vh;
-                padding: 0  0 0 0;
-                text-align: center;
+                padding: 0 0 0 0;
         }
 
        
