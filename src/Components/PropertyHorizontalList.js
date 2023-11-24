@@ -66,10 +66,6 @@ export default function PropertyHorizontalList(props) {
   };
 
 
- 
-  
-  
-
   return (
         <div className='propertyHorizontalListWholeContainer'>   
                 <p className="propertyHorizontalListHeading">Properties for {props.type}</p>

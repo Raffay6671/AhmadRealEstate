@@ -14,7 +14,7 @@ export default function NavBar(props) {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light ">
       <div className="container-fluid">
         <Link to="/" className="logo">
           <p className='name'>ahmadrealestate</p>

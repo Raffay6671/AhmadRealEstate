@@ -12,6 +12,19 @@ const PropertyList = (props) => {
   const itemsPerPage = 12;
 
   const [city, setCity] = useState("All");
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const jsonData = datajson;
+        await setData(jsonData);
+        await setFilteredData(jsonData);
+      } catch (error) {
+        console.error('Error fetching JSON:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -75,6 +88,7 @@ const PropertyList = (props) => {
             uploadDate={property.uploadDate}
             style={elementStyle}
             setPropertyValues={props.setPropertyValues}
+            category={props.type}
           />
         )) : <NoResultFound />}
       </div>

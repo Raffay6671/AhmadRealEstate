@@ -12,10 +12,7 @@ export default function SimilarProperties(props) {
   const [displayedProperties, setDisplayedProperties]= useState(4)
   const [isClicked, setIsClicked] = useState(false);
 
-  useEffect(() => {
-       console.log("display Limit: ", displayLimit, "display Properties", displayedProperties);
-      }, [displayLimit, displayedProperties]); // Empty dependency array to run this effect only once when the component mounts
-      
+
 
   useEffect(() => {
     const handleResize = () => {

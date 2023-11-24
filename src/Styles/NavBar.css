@@ -2,13 +2,16 @@
 
 .navbar{
 
-        background-color: #F5F5F5;
-        /* position: fixed; */
+        background-color: #c2bfbf;
+        /* position: fixed;         */
+        /* top: 0; */
+        /* width: 100%;
+        z-index: 9999; */
         /* top: 0;
         left: 0;
         width: 100%;
         z-index: 9999; */
-        /* height: 50px; */
+        /* height: 70px; */
 }
 
 .logo p, .logo{
@@ -41,19 +44,40 @@
 
 
 .navbar-collapse.collapse a {
-        /* color: #000000;
+        height: 100%;
+        color: #000000;
         font-family: 'Inter';
         font-style: normal ;
         font-weight: 100;
         font-size: 12px;
 
-        line-height: 21px; */
+        line-height: 21px;
 }
 
 
 
 .navbar-collapse.collapse a:hover{
-        /* color: #264FE3 ;
-         text-decoration: none; */
+        color: #264FE3 ;
+         text-decoration: none;
+         transition: 0.3s;
 }
 
+
+
+@media (max-width: 768px){
+
+        .logo p, .logo{
+                display: inline;
+                font-family: 'Kadwa';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                text-decoration: none;
+        
+                line-height: 60px;
+                text-align: right;
+                
+        }
+
+        
+}

@@ -2,7 +2,7 @@
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        /* margin-top: 1vh; */
+        margin-top: 1vh;
         margin-left: 15%;
         margin-right: 15%;
         gap: 50px;
@@ -77,6 +77,14 @@
         font-style: normal;
         color: black;
 }
+
+.propertyDetailValueText{
+        font-size: 13px;
+        font-family: 'Inter';
+        font-style: normal;
+        color: black;
+
+}
 .propertyDetailsPriceAddDate{
         display: flex;
         flex-direction: column;
@@ -102,11 +110,11 @@
         /* display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        /* gap: 5%; */
-        /* width: 90px;
+        gap: 5%;
         justify-content: space-between;  */
         display: grid;
-        grid-template-columns: repeat(4, 1fr); 
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center; 
         gap: 40px;
 }
 
@@ -138,6 +146,14 @@
         padding: 0;
 
 
+}
+
+.propertyDetailsIconValuediv{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        /* width: 70%; */
 }
 .propertyDetailsDate{
         color:#5A5A5A;
@@ -190,11 +206,13 @@
                 padding: 0;
         }
 
+      
+
         .propertyDetailsContacts {
              
-                justify-content: center;
+        justify-content: center;
                
-              }
+        }
 
 
         .propertyDetailsPriceIconContainer{
@@ -209,16 +227,41 @@
         }
 
         .propertyDetailsPriceAddDate{
+                border-bottom: 1px solid #5A5A5A;
                 display: flex;
                 flex-direction: column;
                 width: 100%;
         }
 
         .propertyDetailsIconValueList{
-                width: 100%;
-                display: grid;
-                grid-template-columns: repeat(3, 1fr); 
+                
+                width: 90%;
+                padding-top: 10%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-;
+                align-items: center;
+                /* display: grid;
+                grid-template-columns: repeat(2, 1fr);  */
+                gap: 0px;
+        }
+        .propertyDetailsIconValueContainer{
+                /* border: 1px solid black; */
+                display: flex;
+                /* background-color: rgb(198, 195, 195); */
+                flex-direction: row;
+                align-items:flex-start;
+                padding: 0px;
                 gap: 5px;
+                width: 50%;
+                height: 100%;
+               
+        }
+        .propertyDetailsIconValuediv{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 70%;
         }
 
         .propertyDetailsText{
@@ -227,6 +270,39 @@
         .propertyDetilsDescriptionContainer{
                 font-size: 7px;
         }
+
+        .propertyDetailsDescriptionConditionContainer{
+                flex-direction: column;
+        
+        }
+
+        .propertyDetailsPriceContainer{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+                gap: 3vh;
+                align-items: flex-end;    
+        }
+
+        .propertyDetailsPKR{
+                font-size: 15px;
+        }
+
+        .propertyDetailsPriceNumber{
+                font-size: 25px;
+        
+        
+        }
+
+        .propertyDetailsDate{
+                color:#5A5A5A;
+                width: 100%;
+                text-align: center;
+                font-size: 15px;
+        }
+
+       
         
 
 }
