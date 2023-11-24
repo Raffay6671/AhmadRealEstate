@@ -9,6 +9,10 @@
         width: 250px;
         object-fit: cover;
 }
+.propertyImage:hover{
+        filter: brightness(0.5);
+        transition: filter 0.3s;
+}
 .propertyIcon{
         width: 16px;
         height: 16px;
@@ -45,9 +49,10 @@
 }
 
 .cardd{
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
         color: #5A5A5A;
+        text-decoration: none;
 }
 .cardd:hover{
         text-decoration: none;

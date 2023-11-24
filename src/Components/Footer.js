@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React  from 'react'
 import "../Styles/Footer.css"
 import quinta from "../Images/QuintaCodeBlack.png"
 import insta from "../Images/insta-icon.png"
@@ -17,11 +17,11 @@ export default function Footer() {
                         <p className='footerName'>ahmadrealestate</p>
                         <p className='footerComm'>.com</p>
                 </Link>
-                <a  target="_blank" href='https://www.linkedin.com/company/100022422/' className="quinta-block">
+                <a   rel="noopener noreferrer" target="_blank" href='https://www.linkedin.com/company/100022422/' className="quinta-block">
                         <p className="developed">
                                 Developed by
                         </p>
-                        <img className='quinta' src={quinta}/>
+                        <img className='quinta' alt='not loaded' src={quinta}/>
                 </a>
                
         </div>
@@ -71,18 +71,18 @@ export default function Footer() {
                                 Murree
                         </Link>
                         </div>
-                </div>
+                </div>  
                 <div className="company">
                 <p className='heading'>
                                 Our Office
                         </p >
-                        <p className='sub-heading'>
+                        <p className='sub-heading2'>
                         Shop no 10, Blue Area, <br></br> Islamabad Capital Territory,<br></br> Pakistan
                         </p>
-                        <p className='sub-heading'>
+                        <p className='sub-heading2'>
                         Phone: 03357878678
                         </p>
-                        <p className='sub-heading'>
+                        <p className='sub-heading2'>
                         ahmadrealestate@gmail.com
                         </p>
 
@@ -93,15 +93,15 @@ export default function Footer() {
                         </p>
                         <div className="social">
                                 <Link to='/'>
-                                        <img href='#' className='icon' src={insta}/>
+                                        <img  className='icon' alt='not loaded' src={insta}/>
 
                                 </Link>
                                 <Link href='/'>
-                                        <img href='#' className='icon' src={facebook}/>
+                                        <img  className='icon' alt='not loaded' src={facebook}/>
 
                                 </Link>
                                 <Link href='/'>
-                                        <img href='#' className='icon' src={linkedin}/>
+                                        <img  className='icon' alt='not loaded' src={linkedin}/>
 
                                 </Link>
                                 

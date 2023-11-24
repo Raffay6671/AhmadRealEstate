@@ -11,7 +11,7 @@ export default function Filter(props) {
     const updatedName = cityOptions[index];
     setSelectCity(updatedName);
     props.updateCity(updatedName);
-    console.log("hello from your teacher qaiser shafi")
+    console.log("City Changed! calling from filter")
   };
 
 

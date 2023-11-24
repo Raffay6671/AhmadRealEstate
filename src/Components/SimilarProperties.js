@@ -3,14 +3,19 @@ import Property from './Property'
 import "../Styles/propertyHorizontalList.css"
 import datajson from "../dataa.json"
 import leftArrow from "../Images/leftArrow.png"
-import {Link } from 'react-router-dom';
 import rightArrow from "../Images/rightArrow.png"
 
-export default function PropertyHorizontalList(props) {
+export default function SimilarProperties(props) {
   const [data, setData] = useState(null);
+  const [filteredData, setFilteredData] = useState(null);
   const [displayLimit, setDisplayLimit] = useState(4);
   const [displayedProperties, setDisplayedProperties]= useState(4)
   const [isClicked, setIsClicked] = useState(false);
+
+  useEffect(() => {
+       console.log("display Limit: ", displayLimit, "display Properties", displayedProperties);
+      }, [displayLimit, displayedProperties]); // Empty dependency array to run this effect only once when the component mounts
+      
 
   useEffect(() => {
     const handleResize = () => {
@@ -34,30 +39,57 @@ export default function PropertyHorizontalList(props) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // const response = 
         const jsonData = datajson;
         await setData(jsonData);
       } catch (error) {
-        console.error('Errorr fetching JSON:', error);
-
+        console.error('Error fetching JSON:', error);
       }
-      setIsClicked(false)
+      setIsClicked(false);
     };
-
+  
     fetchData();
-  }, []);
-  function handleRightClick()
-  {
-    setIsClicked(true);
-    if(displayedProperties < data[data.length - 1].elementNumber)
-      setDisplayedProperties(displayedProperties + 1)
-  }
+  }, []); // Empty dependency array to run this effect only once when the component mounts
+  
 
-  function handleLeftClick()
-  { 
+
+  function assignElementNumbers(filteredData) {
+        if (!filteredData) return [];
+      
+        return filteredData.map((property, index) => ({
+          ...property,
+          elementNumber: index + 1,
+        }));
+      }
+      
+  useEffect(() => {
+        const updateFilteredData = async () => {
+                const updatedData = assignElementNumbers(
+                  data.filter((element) => element.address.split(', ').pop() === props.cityNearBy)
+                );
+                await setFilteredData(updatedData);
+              };
+              if (data)
+              updateFilteredData();
+            
+  }, [data,  props.cityNearBy]);
+  function handleRightClick() {
     setIsClicked(true);
-    if(displayedProperties > displayLimit)
-      setDisplayedProperties(displayedProperties - 1)
+    setDisplayedProperties((prevDisplayedProperties) => {
+      if (prevDisplayedProperties < filteredData[filteredData.length - 1].elementNumber) {
+        return prevDisplayedProperties + 1;
+      }
+      return prevDisplayedProperties;
+    });
+  }
+  
+  function handleLeftClick() {
+    setIsClicked(true);
+    setDisplayedProperties((prevDisplayedProperties) => {
+      if (prevDisplayedProperties > displayLimit) {
+        return prevDisplayedProperties - 1;
+      }
+      return prevDisplayedProperties;
+    });
   }
 
   const elementStyle = {
@@ -72,8 +104,7 @@ export default function PropertyHorizontalList(props) {
 
   return (
         <div className='propertyHorizontalListWholeContainer'>   
-                <p className="propertyHorizontalListHeading">Properties for {props.type}</p>
-
+                <p className="propertyHorizontalListHeading">Similar properties nearby</p>
 
                 <div className="listWithArrows">
 
@@ -81,8 +112,8 @@ export default function PropertyHorizontalList(props) {
                     <img className='propertyHorizontalListArrowImage' src={leftArrow} alt="Left Arrow" />
                   </button>
                   <div className='propertyHorizontalListContainer'>
-                    {data ? data.map((property) => (
-                      property.elementNumber <= displayedProperties && property.elementNumber > displayedProperties - displayLimit ? (
+                        {(filteredData ? filteredData.map((property) => (
+                      ((property.elementNumber <= displayedProperties) && (property.elementNumber > (displayedProperties - displayLimit))) ? (
                         <Property
                           key={property.elementNumber}
                           elementNumber={property.elementNumber}
@@ -98,7 +129,10 @@ export default function PropertyHorizontalList(props) {
                           category={props.type}
                         />
                       ) : null
-                    )) : <div>Properties not rendered</div>}
+                    )) : <div>Properties not rendered</div>)}
+                     
+
+
                   </div>
 
                   <button  className={`propertyHorizontalListArrowButton ${isClicked ? 'active' : ''}`} onClick={() => handleRightClick()}>
@@ -106,15 +140,12 @@ export default function PropertyHorizontalList(props) {
                   </button>
                 </div>
 
-
-                <Link to='/PropertyList' className='propertyLink' onClick={()=>{props.setCategory(props.type)}}>View all Properties for {props.type}</Link>
-
-              {/* {props.setCategory(props.type)} */}
               
         </div>
   )
 }
 
-PropertyHorizontalList.defaultProps = {
-       type: "Sale"
+SimilarProperties.defaultProps = {
+       type: "Sale",
+       cityNearBy: null
       };

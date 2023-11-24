@@ -1,8 +1,9 @@
-import React from 'react'
+import React  from 'react'
 import '../Styles/property.css'
 import bed from '../Images/bed-icon.png'
 import house from '../Images/house-icon.png'
 import toilet from '../Images/toilet-icon.png'
+import { Link } from 'react-router-dom';
 
 export default function Property(props) {
 
@@ -29,27 +30,53 @@ export default function Property(props) {
                   return `Added ${timeDiffSeconds} Second${timeDiffSeconds > 1 ? 's' : ''} Ago`;
                 }
               }
+
               
 
+              function syncDetails(){
+                props.setPropertyValues({
+                  ...props.propertyValues,
+                  imageUrl: props.imageUrl,
+                  numBed: props.numBed,
+                  numToilet: props.numToilet,
+                  size: props.size,
+                  price: props.price,
+                  address: props.address,
+                  uploadDate: props.uploadDate,
+                  category: props.category,
+                  description: "great ambiance, near the main market",
+                  condition: "Excellent" ,
+                  numLounge: 3,
+                  numStore: 1,
+                  numLaundary: 4,
+                  numDrawing: 3,
+                  numKitchen: 2
+                });
+              }
+
   return (
-    <div>
-        <div className="cardd" style={{ width: '14rem' }}>
-        <img className='propertyImage' src={props.imageUrl} alt="Card image cap" />
+    <div onClick={syncDetails}>
+        <Link  to="/PropertyDetails" className="cardd" style={{ width: '14rem' }}>
+
+            
+
+       
+        <img className='propertyImage' src={props.imageUrl} alt="Card  cap" />
                 <div className="card-bodyy">
                         <div className="propertyIconValueList">
     
                                 <div className="propertyIconValueContainer      ">
-                                        <img src={bed} className='propertyIcon'/>
-                                        <p className='prpoertyIconValue'> {props.numBed}</p>
+                                        <img src={bed} alt='not loaded' className='propertyIcon'/>
+                                        <p className='propertyIconValue'> {props.numBed}</p>
                                 </div>
 
                                 <div className="propertyIconValueContainer      ">
-                                        <img src={toilet} className='propertyIcon'/>
-                                        <p className='prpoertyIconValue'> {props.numToilet}</p>
+                                        <img src={toilet} alt='not loaded' className='propertyIcon'/>
+                                        <p className='propertyIconValue'> {props.numToilet}</p>
                                 </div>
 
                                 <div className="propertyIconValueContainer      ">
-                                        <img src={house} className='propertyIcon'/>
+                                        <img src={house} alt='not loaded' className='propertyIcon'/>
                                         <p className='propertyIconValue'> {props.size}</p>
                                 </div>
                         </div>
@@ -59,7 +86,7 @@ export default function Property(props) {
                         <p className="propertyAddress">{props.address}</p>       
                         <p className="propertyDate">{formatUploadTime(props.uploadDate)}</p>       
                 </div>
-        </div>
+        </Link>
     </div>
   )
 }

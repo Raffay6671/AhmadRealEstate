@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Property from './Property';
 import "../Styles/propertyList.css";
 import datajson from "../dataa.json";
-import Footer from './Footer';
 import Filter from './Filter';
 import NoResultFound from './NoResultFound';
 
@@ -32,7 +31,6 @@ const PropertyList = (props) => {
     marginLeft: '100px',
     marginRight: '100px',
   };
-
   useEffect(() => {
     const updateFilteredData = async () => {
       await setFilteredData(data.filter(
@@ -44,7 +42,8 @@ const PropertyList = (props) => {
       updateFilteredData();
       setPageNo(1);
     }
-  }, [city]);
+// eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [city, ]);
 
   useEffect(() => {
     // Scroll to the top after page number is updated
@@ -75,6 +74,7 @@ const PropertyList = (props) => {
             address={property.address}
             uploadDate={property.uploadDate}
             style={elementStyle}
+            setPropertyValues={props.setPropertyValues}
           />
         )) : <NoResultFound />}
       </div>
@@ -98,7 +98,6 @@ const PropertyList = (props) => {
         </button>
       </div>
 
-      <Footer />
     </div>
   );
 };

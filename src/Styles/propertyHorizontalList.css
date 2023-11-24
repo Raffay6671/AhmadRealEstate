@@ -74,10 +74,12 @@
 }
 .propertyLink{
         color: #37474F;
+        text-decoration: none;
 }
 .propertyLink:hover{
         text-decoration: none;
         color: #264FE3;
+        transition: 0.3s;
 }
 
 
