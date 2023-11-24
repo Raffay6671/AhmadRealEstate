@@ -166,7 +166,7 @@ export default function PropertyDetails(props) {
 
         </div>
         <p> </p>
-        <div className="propertyDetailsConditionContainer">
+        <div className="propertyDetailsDescriptionContainer">
         <p className='propertyDetailsText'>
           Condition
         </p>

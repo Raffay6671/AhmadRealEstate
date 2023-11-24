@@ -161,3 +161,72 @@
 
       
       
+
+@media (max-width: 768px) {
+
+        .propertyDetailsPropertyInfo{
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                /* margin-top: 1vh; */
+                margin-left: 5%;
+                margin-right: 5%;
+                gap: 20px;
+        
+        
+        }
+
+        .propertyDetailsHouseHeading{
+                
+                font-size: 20px;
+                line-height: 30px;
+        
+        }
+
+        .propertyDetailsHeadingWhatsapp{
+                flex-direction: column;
+                justify-content: space-between;
+                align-items:  flex-start;
+                padding: 0;
+        }
+
+        .propertyDetailsContacts {
+             
+                justify-content: center;
+               
+              }
+
+
+        .propertyDetailsPriceIconContainer{
+        display: flex;
+        
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        
+                
+        }
+
+        .propertyDetailsPriceAddDate{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+        }
+
+        .propertyDetailsIconValueList{
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr); 
+                gap: 5px;
+        }
+
+        .propertyDetailsText{
+                font-size: 15px;
+        } 
+        .propertyDetilsDescriptionContainer{
+                font-size: 7px;
+        }
+        
+
+}
