@@ -90,7 +90,7 @@ const PropertyList = (props) => {
             setPropertyValues={props.setPropertyValues}
             category={props.type}
           />
-        )) : <NoResultFound />}
+        )) : (<><div></div> <NoResultFound text="Sorry :("  /> <NoResultFound text="no results found"  /> </>)}
       </div>
 
       {/* Pagination */}
