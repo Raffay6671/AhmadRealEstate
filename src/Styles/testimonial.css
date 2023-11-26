@@ -7,9 +7,9 @@
         position: relative;
         width: 100%;
         height: auto; /* Change to auto to maintain aspect ratio */
-        max-height: 660px; /* Add a max-height for smaller screens */
+        /* max-height: 660px;  */
         object-fit: cover; /* Change to cover to maintain aspect ratio and cover the container */
-      }
+      } 
       
       .text-test {
         position: absolute;
@@ -50,14 +50,25 @@
       
       /* Responsive Styles */
       @media (max-width: 768px) {
+
+
+        .container-test {
+          position: relative;
+          margin-top: 5%;
+        }
+
+        .test-image {
+          height: 60vh;
+         }
         .text-test {
+          top: 20%;
           left: 5%;
           right: 5%;
           /* padding: 2% 2% 2% 2%; */
         }
       
         .heading2 {
-          font-size: 14px;
+          font-size: 18px;
           line-height: 10px;
         }
 
@@ -69,13 +80,11 @@
       
         .quotation {
                 font-size: 12px;
-          line-height: 13px;
+          line-height: 17px;
           margin-top: 13%;
           padding-right: 10%;
           padding-left: 10%;
         }
-        .test-image {
-               height: 40vh;
-              }
+        
       }
       

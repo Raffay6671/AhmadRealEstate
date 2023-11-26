@@ -55,14 +55,16 @@ export default function Property(props) {
               }
 
   return (
-    <div onClick={syncDetails}>
-        <Link  to="/PropertyDetails" className="cardd" style={{ width: '14rem' }}>
+    <div  >
+        <div className="cardd" >
 
             
 
        
-        <img className='propertyImage' src={props.imageUrl} alt="Card  cap" />
-                <div className="card-bodyy">
+                <Link  to="/PropertyDetails" className="card-bodyy"  onClick={syncDetails}>
+
+                <img className='propertyImage' src={props.imageUrl} alt="Card  cap" />
+
                         <div className="propertyIconValueList">
     
                                 <div className="propertyIconValueContainer      ">
@@ -85,8 +87,8 @@ export default function Property(props) {
                         <p className="card-text">{props.price} PKR</p>       
                         <p className="propertyAddress">{props.address}</p>       
                         <p className="propertyDate">{formatUploadTime(props.uploadDate)}</p>       
-                </div>
-        </Link>
+                </Link>
+        </div>
     </div>
   )
 }

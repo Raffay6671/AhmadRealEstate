@@ -7,6 +7,8 @@ import PropertyDetails from './Components/PropertyDetails';
 import ScrollToTop from './Components/ScrollToTop';
 import Footer from './Components/Footer';
 
+
+
 function App() {
   const [category, setCategory] = useState(null);
   const [propertyValues, setPropertyValues] = useState({

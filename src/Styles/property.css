@@ -1,39 +1,61 @@
-.propertyIconValueContainer{
-        display: flex;
-        flex-direction: row;
-        align-items:flex-start;
-        gap: 5px;
-}
-.propertyImage{
-        height: 150px;
-        width: 250px;
-        object-fit: cover;
-}
-.propertyImage:hover{
-        filter: brightness(0.5);
-        transition: filter 0.3s;
-}
-.propertyIcon{
-        width: 16px;
-        height: 16px;
-}
-.propertyIconValue{
-        margin-top: -1px;
-        font-size: 13px;
-}
+.cardd{
 
-.propertyIconValueList{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        color: #5A5A5A;
+        text-decoration: none;
+        flex-basis: calc(25% - 20px);
+       
 }
 
 .card-bodyy{
         display: flex;
         flex-direction: column;
-        padding: 10%;
+        margin: 10%;
+        text-decoration: none;
+        color: black;
+       
 }
+
+.propertyImage{
+        object-fit: cover;
+        max-height: 162px;
+        min-height: 162px;
+        width: 100%;
+        }
+.propertyImage:hover{
+        filter: brightness(0.5);
+        transition: filter 0.3s;
+}
+
+
+.propertyIconValueList{
+        width: 100%;
+        display: flex;
+        margin-top: 10px;
+        flex-direction: row;
+        justify-content: space-evenly;
+}
+
+
+.propertyIconValueContainer{
+        display: flex;
+        flex-direction: row;
+        align-items:flex-start;
+        justify-content: flex-start   ;
+        gap: 10px;
+        width: 100%;
+}
+
+.propertyIcon{
+        max-width: 16px;
+        max-height: 16px;
+}
+.propertyIconValue{
+        /* margin-top: -1px; */
+        font-size: 13px;
+}
+
+
+
 
 .propertyAddress{
         color: #5A5A5A;
@@ -44,22 +66,10 @@
         font-size: 12px;
 }
 
-.card-img-top{
-        border: none;
-}
 
-.cardd{
-        margin-left: 10px;
-        margin-right: 10px;
-        color: #5A5A5A;
-        text-decoration: none;
-}
-.cardd:hover{
-        text-decoration: none;
-        color: #5A5A5A;
-}
 
-@media (max-width: 768px) {
-        
 
-}
+
+
+
+

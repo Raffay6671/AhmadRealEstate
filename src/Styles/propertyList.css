@@ -7,20 +7,30 @@
         line-height: 48px;
         color: #264FE3;
         text-align: left;
-        padding-left: 17%; 
-        padding-right: 19%;
+        padding-left: 12%;   
+        /* padding-right: 19%; */
         display: block;
         justify-content: start;
 }
 
 .propertyListContainer{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-left: 15%;
-        margin-right: 15%;
+        /* display: grid;
+        justify-items: center; 
+        align-items: center; 
+        grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+        margin-left: 10%;
+        margin-right: 10%;
+       */
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+       gap: 6%;
+       margin-left: 10%;
+       margin-right: 10%;
+
 }
+
+
 
 
 
@@ -70,9 +80,16 @@ background-color: #f0f0f0; /* Change background color on hover */
 
       
         .propertyListHeading{
-                padding-right: 0%;
-                font-size: 15px;
+               text-align: center;
+               padding: 0;
                 
+        }
+        .propertyListContainer{
+                display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+                margin-left: 5%;
+                margin-right: 5%;
+                gap: 0;
         }
 }
 
