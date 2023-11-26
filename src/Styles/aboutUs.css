@@ -1,0 +1,36 @@
+/* aboutUs.css */
+
+/* Add styles for the About Us section */
+.about-us-section {
+        padding: 50px 0;
+        background-color: #f8f9fa;
+      }
+      
+      /* Style the team members section */
+      .our-team-section {
+        padding: 50px 0;
+      }
+      
+      .team-member-card {
+        margin-bottom: 30px;
+      }
+      
+      /* Style the Contact Us section */
+      .contact-us-section {
+        padding: 50px 0;
+        background-color: #f8f9fa;
+      }
+      
+      .contact-button {
+        background-color: #007bff;
+        border: none;
+        padding: 15px 30px;
+        font-size: 18px;
+        color: #fff;
+        transition: background-color 0.3s;
+      }
+      
+      .contact-button:hover {
+        background-color: #0056b3;
+      }
+      

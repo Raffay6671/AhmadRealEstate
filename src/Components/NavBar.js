@@ -17,7 +17,7 @@ export default function NavBar(props) {
     <nav className="navbar navbar-expand-lg navbar-light bg-light ">
       <div className="container-fluid">
         <Link to="/" className="logo">
-          <p className='name'>ahmadrealestate</p>
+          <p className='name'>ahmedrealestate</p>
           <p className='com'>.com</p>
         </Link>
         <button
@@ -41,15 +41,9 @@ export default function NavBar(props) {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/PropertyList" onClick={() => { props.setCategory("Rent"); closeNavbar(); }}>For Rent</Link>
-            </li>
+            </li> 
             <li className="nav-item">
-              <Link className="nav-link" to="/" onClick={closeNavbar}>Our Projects</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/" onClick={closeNavbar}>About Us</Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/" onClick={closeNavbar}>Contact us</Link>
+              <Link className="nav-link" to="/AboutUs" onClick={closeNavbar}>About Us</Link>
             </li>
           </ul>
         </div>

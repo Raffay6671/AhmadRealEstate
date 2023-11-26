@@ -8,13 +8,13 @@ import { Link } from 'react-router-dom';
 
 
 
-export default function Footer() {
+export default function Footer(props) {
   return (
     <div>
          <div className='footer'>
         <div className="text-area">
                 <Link to="/" className="footerLogo">
-                        <p className='footerName'>ahmadrealestate</p>
+                        <p className='footerName'>ahmedrealestate</p>
                         <p className='footerComm'>.com</p>
                 </Link>
                 <a   rel="noopener noreferrer" target="_blank" href='https://www.linkedin.com/company/100022422/' className="quinta-block">
@@ -31,14 +31,14 @@ export default function Footer() {
                         <p className='heading'>
                                 Company
                         </p>
-                        <Link to='/' className='sub-heading'>
-                                Contact us
-                        </Link>
-                        <Link to='/' className='sub-heading'>
+                        <Link to='/AboutUs' className='sub-heading'>
                                 About us
                         </Link>
-                        <Link to='/' className='sub-heading'>
-                                Our Projects
+                        <Link to='/PropertyList' className='sub-heading'>
+                                Properties for Sale
+                        </Link>
+                        <Link to='/PropertyList' className='sub-heading'onClick={() => { props.setCategory("Rent") }}>
+                                Properties for Rent
                         </Link>
                     
                        
@@ -46,15 +46,6 @@ export default function Footer() {
                 </div>
                 <div className="ser-cov">
                         <div className="company">
-                        <p  className='heading'>
-                                Services
-                        </p>
-                        <Link to='/PropertyList' className='sub-heading'>
-                                Properties for Sale
-                        </Link>
-                        <Link to='/PropertyList' className='sub-heading'>
-                                Properties for Rent
-                        </Link>
 
                         </div>
                         <div className="company">
@@ -83,7 +74,7 @@ export default function Footer() {
                         Phone: 03357878678
                         </p>
                         <p className='sub-heading2'>
-                        ahmadrealestate@gmail.com
+                        ahmedrealestate@gmail.com
                         </p>
 
                 </div>

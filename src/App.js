@@ -6,6 +6,7 @@ import NavBar from './Components/NavBar';
 import PropertyDetails from './Components/PropertyDetails';
 import ScrollToTop from './Components/ScrollToTop';
 import Footer from './Components/Footer';
+import AboutUs from './Components/AboutUs';
 
 
 
@@ -46,8 +47,9 @@ function App() {
         <Route path="/" element={<HomePage setcategory={setCategory} setPropertyValues={setPropertyValues}/>} />
         <Route path="/PropertyList" element={<PropertyList type={category} setPropertyValues={setPropertyValues}/>} />
         <Route path="/PropertyDetails" element={<PropertyDetails propertyValues={propertyValues} setPropertyValues={setPropertyValues}/>}/>
+        <Route path="/AboutUs" element={<AboutUs/>}/>
       </Routes>
-      <Footer/>
+      <Footer setCategory={setCategory}/>
     </Router>
   );
 }
